@@ -17,11 +17,17 @@ namespace ProyectoPI.Models
         }
 
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
+        public DbSet<Maki> Makis { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Maki>(entity =>
+            {
+                entity.Property(e => e.Precio)
+                    .HasColumnType("decimal(18, 2)");
+            });
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)

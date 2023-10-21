@@ -1,0 +1,60 @@
+﻿@model List<ProyectoPI.Models.Maki>
+
+<h2>Catálogo de Makis</h2>
+
+<div class="catalog-container">
+    @foreach (var maki in Model)
+    {
+        <div class="maki-item">
+            <h3>@maki.Nombre</h3>
+            <p>Ingredientes: @maki.Ingredientes</p>
+            <p>Precio: @maki.Precio.ToString("C")</p>
+            <div class="buttons-container">
+                <a class="detalle-button" href="#">Detalle</a>
+                <a class="add-button" href="#" data-product-id="@maki.Id">+</a>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="sidebar">
+    <partial name="Shared/_Carrito" model='ViewData["Carrito"]' />
+</div>
+
+
+<style>
+    .catalog-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .maki-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        width: calc(33.33% - 20px);
+        text-align: center;
+        box-shadow: 2px 2px 5px #ccc;
+    }
+
+    .buttons-container {
+        margin-top: 10px;
+    }
+
+    .detalle-button, .add-button {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 5px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .add-button {
+        background-color: #28a745;
+    }
+
+</style>
