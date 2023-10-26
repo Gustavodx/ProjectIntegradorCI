@@ -767,6 +767,12 @@ C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\H
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\IBM.Watson.Common.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\MessagePack.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.Build.dll
@@ -809,6 +815,7 @@ C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\M
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

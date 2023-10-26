@@ -37,15 +37,29 @@ namespace ProyectoPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult AgregarAlCarrito(int id, int cantidad)
+        public IActionResult AddToCart(int makiId)
         {
-            var maki = _context.Makis.FirstOrDefault(m => m.Id == id);
-            if (maki != null && cantidad > 0)
+            // Lógica para agregar el maki al carrito.
+            // Aquí debes buscar el maki por ID y agregarlo al carrito.
+
+            var maki = _context.Makis.Find(makiId);
+            if (maki != null)
             {
-                var carritoItem = new CarritoItem { Maki = maki, Cantidad = cantidad };
-                _carrito.Items.Add(carritoItem);
+                // Verificar si el maki ya está en el carrito y, si es así, incrementar la cantidad.
+                var carritoItem = _carrito.Items.Find(item => item.Maki.Id == maki.Id);
+                if (carritoItem != null)
+                {
+                    carritoItem.Cantidad++;
+                }
+                else
+                {
+                    _carrito.Items.Add(new CarritoItem { Maki = maki, Cantidad = 1 });
+                }
             }
-            return RedirectToAction("Index");
+
+            return Json(new { success = true, message = "Producto agregado al carrito" });
         }
+
+
     }
 }

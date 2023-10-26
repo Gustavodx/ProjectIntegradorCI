@@ -1,42 +1,11 @@
 ﻿@model List<ProyectoPI.Models.Carrito.CarritoItem>
 
-<div id="carrito">
-    <h3>Carrito de Compras</h3>
-    <ul>
-        @foreach (var item in Model)
-        {
-            <li>
-                @item.Maki.Nombre
-                <div class="cantidad">
-                    <button class="restar-cantidad">-</button>
-                    <span>@item.Cantidad</span>
-                    <button class="sumar-cantidad">+</button>
-                </div>
-            </li>
-        }
-    </ul>
-    <div class="total">
-        <strong>Total:</strong> @Model.Sum(item => item.Maki.Precio * item.Cantidad)
-    </div>
-    <button class="confirmar">Confirmar Compra</button>
-</div>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Maki.Nombre - Cantidad: @item.Cantidad
+        </li>
+    }
+</ul>
 
-<script>
-    $(document).ready(function () {
-        $(".sumar-cantidad").click(function () {
-            var cantidadElement = $(this).siblings("span");
-            var cantidad = parseInt(cantidadElement.text());
-            cantidad++;
-            cantidadElement.text(cantidad);
-        });
-
-        $(".restar-cantidad").click(function () {
-            var cantidadElement = $(this).siblings("span");
-            var cantidad = parseInt(cantidadElement.text());
-            if (cantidad > 1) {
-                cantidad--;
-                cantidadElement.text(cantidad);
-            }
-        });
-    });
-</script>

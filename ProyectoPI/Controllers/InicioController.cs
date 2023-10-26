@@ -26,7 +26,7 @@ namespace ProyectoPI.Controllers
         [HttpPost]
         public async Task<IActionResult>Registrarse(Usuario modelo)
         {
-            modelo.Clave = Utils.EncriptarClave(modelo.Clave);
+            modelo.Clave = Recursos.Utils.EncriptarClave(modelo.Clave);
             Usuario usuario_cra = await _usuarioService.SaveUsuario(modelo);
             if (usuario_cra.IdUsuario > 0)
                 return RedirectToAction("IniciarSession", "Inicio");
@@ -43,7 +43,7 @@ namespace ProyectoPI.Controllers
         [HttpPost]
         public async Task<IActionResult> IniciarSession(string correo, string clave)
         {
-            Usuario usuario_encontrado = await _usuarioService.GetUsuario(correo, Utils.EncriptarClave(clave));
+            Usuario usuario_encontrado = await _usuarioService.GetUsuario(correo, Recursos.Utils.EncriptarClave(clave));
             if (usuario_encontrado == null)
             {
                 ViewData["Mensaje"] = "No se encontraron coincidencias";
