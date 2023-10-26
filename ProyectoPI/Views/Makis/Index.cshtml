@@ -73,18 +73,10 @@
     }
 </div>
 
-<h2>Carrito de Compras</h2>
-
-<ul>
-    @foreach (var item in ViewData["Carrito"] as List<ProyectoPI.Models.Carrito.CarritoItem>)
-    {
-        <li>
-            @item.Maki.Nombre - Cantidad: @item.Cantidad
-        </li>
-    }
-</ul>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
     $(document).ready(function () {
         $(".add-to-cart-form").submit(function (e) {
@@ -93,13 +85,13 @@
             var form = $(this);
             $.post(form.attr("action"), form.serialize(), function (data) {
                 if (data.success) {
-                    var alertHtml = `
-                                <div class="notification">
-                                    ${data.message}
-                                </div>
-                            `;
-
-                    $("body").append(alertHtml);
+                    Swal.fire({
+                        title: 'Producto agregado al carrito',
+                        icon: 'success',
+                        showCancelButton: false,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
                 }
             });
         });
