@@ -753,6 +753,15 @@ D:\DSW_01\ProyectoPI\ProyectoPI\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Micros
 D:\DSW_01\ProyectoPI\ProyectoPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 D:\DSW_01\ProyectoPI\ProyectoPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\DSW_01\ProyectoPI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.csproj.AssemblyReference.cache
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.AssemblyInfoInputs.cache
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.AssemblyInfo.cs
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.csproj.CoreCompileInputs.cache
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.RazorAssemblyInfo.cache
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.RazorAssemblyInfo.cs
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\appsettings.json
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\ProyectoPI.staticwebassets.runtime.json
@@ -767,6 +776,12 @@ C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\H
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\IBM.Watson.Common.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\MessagePack.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.Build.dll
@@ -809,6 +824,7 @@ C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\M
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
@@ -990,15 +1006,6 @@ C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\r
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.csproj.AssemblyReference.cache
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.AssemblyInfoInputs.cache
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.AssemblyInfo.cs
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.csproj.CoreCompileInputs.cache
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.RazorAssemblyInfo.cache
-C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\ProyectoPI.RazorAssemblyInfo.cs
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\staticwebassets\msbuild.ProyectoPI.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\staticwebassets\msbuild.build.ProyectoPI.props
 C:\Users\setie\Music\6TO CICLO\ProjectIntegradorCI\ProyectoPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ProyectoPI.props
