@@ -3,11 +3,11 @@
 <ul class="list-group">
     @foreach (var item in Model)
     {
-        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <li class="list-group-item d-flex justify-content-between align-items-center" data-id="@item.Maki.Id">
             <div>
                 @item.Maki.Nombre
                 <span class="badge badge-primary badge-pill ml-2" id="cantidad-@item.Maki.Id">@item.Cantidad</span>
-                <span class="badge badge-info badge-pill ml-2">$@item.Maki.Precio</span>
+                <span class="badge badge-info badge-pill ml-2" id="precio-unitario-@item.Maki.Id">$@item.Maki.Precio</span>
                 <span class="badge badge-success badge-pill ml-2" id="precio-total-@item.Maki.Id">$@(item.Maki.Precio * item.Cantidad)</span>
             </div>
             <div>

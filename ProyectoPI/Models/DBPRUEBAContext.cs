@@ -18,6 +18,8 @@ namespace ProyectoPI.Models
 
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
         public DbSet<Maki> Makis { get; set; } = null!;
+        public DbSet<Venta> Ventas { get; set; }
+        public DbSet<DetalleVenta> DetalleVentas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 
@@ -26,6 +28,19 @@ namespace ProyectoPI.Models
             modelBuilder.Entity<Maki>(entity =>
             {
                 entity.Property(e => e.Precio)
+                    .HasColumnType("decimal(18, 2)");
+            });
+            modelBuilder.Entity<DetalleVenta>()
+            .Property(d => d.Id)
+            .ValueGeneratedNever();
+
+            modelBuilder.Entity<Venta>()
+            .Property(d => d.Id)
+            .ValueGeneratedNever();
+
+            modelBuilder.Entity<Venta>(entity =>
+            {
+                entity.Property(e => e.MontoTotal)
                     .HasColumnType("decimal(18, 2)");
             });
             modelBuilder.Entity<Usuario>(entity =>
