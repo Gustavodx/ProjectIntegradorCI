@@ -30,6 +30,8 @@
     <button class="btn btn-primary" id="confirmar-compra">Confirmar Compra</button>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
     // Al cargar la página, calcula el total
     $(document).ready(function () {
@@ -38,17 +40,22 @@
 
     function recalculateTotal() {
         var total = 0;
+
+        // Recalcula el total sumando los precios totales de los elementos en el carrito
         $(".list-group-item").each(function () {
             var item = $(this);
-            var id = item.data("id");
-            var price = parseFloat(item.find("#precio-unitario-" + id).text().replace("$", ""));
-            var quantity = parseInt(item.find("#cantidad-" + id).text());
-            var itemTotal = price * quantity;
-            item.find("#precio-total-" + id).text("$" + itemTotal.toFixed(2));
-            total += itemTotal;
+            var itemTotalText = item.find(".badge-success").text().replace("$", ""); // Obtén el texto del elemento
+            var itemTotal = parseFloat(itemTotalText);
+
+            if (!isNaN(itemTotal)) {
+                total += itemTotal;
+            }
         });
+
+        // Actualiza el elemento del monto total
         $("#total-price").text("$" + total.toFixed(2));
     }
+
 
     // Incrementa la cantidad de un producto
     function incrementQuantity(makiId) {
