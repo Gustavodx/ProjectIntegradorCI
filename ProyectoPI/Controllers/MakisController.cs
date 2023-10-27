@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProyectoPI.Models;
+using System.Security.Claims;
 using static ProyectoPI.Models.Carrito;
 
 namespace ProyectoPI.Controllers
@@ -58,6 +60,87 @@ namespace ProyectoPI.Controllers
             }
 
             return Json(new { success = true, message = "Producto agregado al carrito" });
+        }
+
+        [HttpPost]
+        public IActionResult ConfirmarCompra1([FromBody] Venta venta)
+        {
+            try
+            {
+                var nombreUsuario = User.Identity.Name;
+                var usuarioId = _context.Usuarios.First(u => u.Nombre == nombreUsuario).IdUsuario;
+                int nuevoId = _context.Ventas.Max(v => (int?)v.Id) ?? 0;
+                nuevoId++;
+                venta.UsuarioId = usuarioId;
+                venta.CodigoVenta=$"VEN{usuarioId}{new Random().Next(1000, 9999)}000";
+                venta.Id = nuevoId;
+                // Aquí puedes guardar la venta y sus detalles en tu base de datos utilizando Entity Framework o tu mecanismo preferido
+                _context.Ventas.Add(venta);
+
+                var detallesVenta = new List<DetalleVenta>();
+
+                foreach (var detalle in venta.DetalleVentas)
+                {
+                    var idven = _context.DetalleVentas.Max(v => (int?)v.Id) ?? 0;
+                    detalle.Id = idven+1;
+                    detalle.VentaId = venta.Id;
+                    detalle.CompradorId = usuarioId;
+                    _context.DetalleVentas.Add(detalle);
+                }
+                _context.DetalleVentas.AddRange(detallesVenta);
+                _context.SaveChanges();
+
+                return Json(new { message = "Compra confirmada exitosamente" });
+            }
+            catch (Exception ex)
+            {
+                // Maneja cualquier error que pueda ocurrir al guardar en la base de datos
+                return Json(new { error = "Ocurrió un error al confirmar la compra." });
+            }
+        }
+
+        [HttpPost]
+        public IActionResult ConfirmarCompra([FromBody] Venta carrito)
+        {
+            // Obtener el ID de usuario de la sesión (reemplaza esto con tu lógica real de obtener el ID del usuario)
+            var nombreUsuario = User.Identity.Name;
+            var usuarioId = _context.Usuarios.First(u => u.Nombre == nombreUsuario).IdUsuario;
+            int nuevoId = _context.Ventas.Max(v => (int?)v.Id) ?? 0;
+            nuevoId++;
+            // Crear una nueva venta
+            var venta = new Venta
+            {
+                Id= nuevoId,
+                UsuarioId = usuarioId,
+                CodigoVenta = $"VEN{usuarioId}{new Random().Next(1000, 9999)}000", // Implementa tu lógica para generar un código único
+                MontoTotal = carrito.MontoTotal,
+                DetalleVentas = new List<DetalleVenta>()
+            };
+            var idven = _context.DetalleVentas.Max(v => (int?)v.Id) ?? 0;
+            idven++;
+            var tun = idven;
+            // Crear instancias de DetalleVenta para cada artículo en el carrito
+            foreach (var item in carrito.DetalleVentas)
+            {
+                var detalleVenta = new DetalleVenta
+                {
+                    Id = tun,
+                    VentaId = venta.Id,
+                    MakiId = item.MakiId,
+                    Cantidad = item.Cantidad,
+                    CompradorId = usuarioId
+                };
+
+                tun++;
+                venta.DetalleVentas.Add(detalleVenta);
+            }
+
+            _context.Ventas.Add(venta);
+            _context.SaveChanges();
+
+            _carrito.Items.Clear();
+
+            return Json("Compra Satisfacotria");
         }
 
 

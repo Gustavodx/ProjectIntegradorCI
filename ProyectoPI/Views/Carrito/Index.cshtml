@@ -31,7 +31,7 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
     // Al cargar la página, calcula el total
     $(document).ready(function () {
@@ -85,6 +85,40 @@
 
     $("#confirmar-compra").click(function () {
         var total = parseFloat($("#total-price").text().replace("$", ""));
-        alert("Total de compra: $" + total.toFixed(2));
+
+        // Recopila los detalles de los productos en el carrito
+        var detallesVenta = [];
+        $(".list-group-item").each(function (i) {
+            var item = $(this);
+            var makiId = item.data("id");
+            var id = i + 1;
+            var cantidad = parseInt(item.find(".badge-primary").text());
+            detallesVenta.push({ MakiId: makiId, Cantidad: cantidad, Id:id });
+        });
+        var ventaData = {
+            MontoTotal: total,
+            DetalleVentas: detallesVenta
+        };
+
+        $.ajax({
+            url: "/Makis/ConfirmarCompra",
+            type: "POST",
+            data: JSON.stringify(ventaData),
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                    Swal.fire({
+                        title: data.message,
+                        icon: 'success',
+                        showCancelButton: false,
+                        showConfirmButton: false,
+                        timer: 3000
+                    });
+            },
+            error: function (error) {
+                console.error(error);
+                alert(error)
+            }
+        });
     });
+
 </script>

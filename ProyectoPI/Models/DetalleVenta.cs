@@ -2,14 +2,13 @@
 
 namespace ProyectoPI.Models
 {
-    public class Maki
+    public class DetalleVenta
     {
         [Key]
         public int Id { get; set; }
-        public string? Nombre { get; set; }
-        public string? Ingredientes { get; set; }
-        public decimal Precio { get; set; }
-
+        public int VentaId { get; set; }
+        public int MakiId { get; set; }
         public int Cantidad { get; set; }
+        public int CompradorId { get; set; }
     }
 }

@@ -21,6 +21,30 @@ namespace ProyectoPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("ProyectoPI.Models.DetalleVenta", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CompradorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MakiId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VentaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("VentaId");
+
+                    b.ToTable("DetalleVentas");
+                });
+
             modelBuilder.Entity("ProyectoPI.Models.Maki", b =>
                 {
                     b.Property<int>("Id")
@@ -73,6 +97,40 @@ namespace ProyectoPI.Migrations
                         .HasName("PK__USUARIO__5B65BF97CFA2A5B0");
 
                     b.ToTable("USUARIO", (string)null);
+                });
+
+            modelBuilder.Entity("ProyectoPI.Models.Venta", b =>
+                {
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CodigoVenta")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("MontoTotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Ventas");
+                });
+
+            modelBuilder.Entity("ProyectoPI.Models.DetalleVenta", b =>
+                {
+                    b.HasOne("ProyectoPI.Models.Venta", null)
+                        .WithMany("DetalleVentas")
+                        .HasForeignKey("VentaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ProyectoPI.Models.Venta", b =>
+                {
+                    b.Navigation("DetalleVentas");
                 });
 #pragma warning restore 612, 618
         }
