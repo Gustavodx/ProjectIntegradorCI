@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tQsBDErQSx+s9bdYeUAChYSTRcQfrIcXuq8XQVNWcR0=",
+  "Hash": "VTERkQTe0K42w5h8UCEBFPTSgumVcOOZp2r/C/02DZw=",
   "Source": "ProyectoPI",
   "BasePath": "_content/ProyectoPI",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\fondo4.png"
+    },
+    {
+      "Identity": "D:\\DSW_01\\ProyectoPI\\ProyectoPI\\wwwroot\\images\\fondo5.png",
+      "SourceId": "ProyectoPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DSW_01\\ProyectoPI\\ProyectoPI\\wwwroot\\",
+      "BasePath": "_content/ProyectoPI",
+      "RelativePath": "images/fondo5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fondo5.png"
     },
     {
       "Identity": "D:\\DSW_01\\ProyectoPI\\ProyectoPI\\wwwroot\\images\\ig.png",
