@@ -5,11 +5,13 @@ using ProyectoPI.Servicios.Implementacion;
 
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using static ProyectoPI.Models.Carrito;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<CarritoDeCompras>();
 builder.Services.AddDbContext<DBPRUEBAContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("cadena"));

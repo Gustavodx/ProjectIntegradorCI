@@ -1,0 +1,99 @@
+﻿@model List<ProyectoPI.Models.Maki>
+
+<style>
+    .catalog-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .maki-item {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        width: calc(33.33% - 20px);
+        text-align: center;
+        box-shadow: 2px 2px 5px #ccc;
+    }
+
+    .buttons-container {
+        margin-top: 10px;
+    }
+
+    .detalle-button, .add-button {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 5px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .add-button {
+        background-color: #28a745;
+    }
+
+    .notification {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #ccc;
+        z-index: 999;
+        transition: opacity 0.5s;
+    }
+
+        .notification.hidden {
+            opacity: 0;
+        }
+
+</style>
+
+<h2>Catálogo de Makis</h2>
+
+<div class="catalog-container">
+    @foreach (var maki in Model)
+    {
+        <div class="maki-item">
+            <h3>@maki.Nombre</h3>
+            <p>Ingredientes: @maki.Ingredientes</p>
+            <p>Precio: @maki.Precio.ToString("C")</p>
+            <div class="buttons-container">
+                <a class="detalle-button" href="#">Detalle</a>
+                <form method="post" asp-action="AddToCart" asp-route-makiId="@maki.Id" class="add-to-cart-form">
+                    <button type="submit" class="add-button">Agregar al carrito</button>
+                </form>
+            </div>
+        </div>
+    }
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".add-to-cart-form").submit(function (e) {
+            e.preventDefault(); // Evita que se envíe el formulario de manera convencional.
+
+            var form = $(this);
+            $.post(form.attr("action"), form.serialize(), function (data) {
+                if (data.success) {
+                    Swal.fire({
+                        title: 'Producto agregado al carrito',
+                        icon: 'success',
+                        showCancelButton: false,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+            });
+        });
+    });
+</script>
