@@ -64,5 +64,12 @@ namespace ProyectoPI.Controllers
                 properties);
             return RedirectToAction("Index", "Home");
         }
+
+        public async Task<IActionResult> CerrarSesion()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            // Redirige a la página de inicio o a donde desees después de cerrar la sesión
+            return RedirectToAction("IniciarSession", "Inicio");
+        }
     }
 }

@@ -41,9 +41,6 @@ namespace ProyectoPI.Controllers
         [HttpPost]
         public IActionResult AddToCart(int makiId)
         {
-            // Lógica para agregar el maki al carrito.
-            // Aquí debes buscar el maki por ID y agregarlo al carrito.
-
             var maki = _context.Makis.Find(makiId);
             if (maki != null)
             {
@@ -63,56 +60,23 @@ namespace ProyectoPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult ConfirmarCompra1([FromBody] Venta venta)
-        {
-            try
-            {
-                var nombreUsuario = User.Identity.Name;
-                var usuarioId = _context.Usuarios.First(u => u.Nombre == nombreUsuario).IdUsuario;
-                int nuevoId = _context.Ventas.Max(v => (int?)v.Id) ?? 0;
-                nuevoId++;
-                venta.UsuarioId = usuarioId;
-                venta.CodigoVenta=$"VEN{usuarioId}{new Random().Next(1000, 9999)}000";
-                venta.Id = nuevoId;
-                // Aquí puedes guardar la venta y sus detalles en tu base de datos utilizando Entity Framework o tu mecanismo preferido
-                _context.Ventas.Add(venta);
-
-                var detallesVenta = new List<DetalleVenta>();
-
-                foreach (var detalle in venta.DetalleVentas)
-                {
-                    var idven = _context.DetalleVentas.Max(v => (int?)v.Id) ?? 0;
-                    detalle.Id = idven+1;
-                    detalle.VentaId = venta.Id;
-                    detalle.CompradorId = usuarioId;
-                    _context.DetalleVentas.Add(detalle);
-                }
-                _context.DetalleVentas.AddRange(detallesVenta);
-                _context.SaveChanges();
-
-                return Json(new { message = "Compra confirmada exitosamente" });
-            }
-            catch (Exception ex)
-            {
-                // Maneja cualquier error que pueda ocurrir al guardar en la base de datos
-                return Json(new { error = "Ocurrió un error al confirmar la compra." });
-            }
-        }
-
-        [HttpPost]
         public IActionResult ConfirmarCompra([FromBody] Venta carrito)
         {
             // Obtener el ID de usuario de la sesión (reemplaza esto con tu lógica real de obtener el ID del usuario)
             var nombreUsuario = User.Identity.Name;
             var usuarioId = _context.Usuarios.First(u => u.Nombre == nombreUsuario).IdUsuario;
             int nuevoId = _context.Ventas.Max(v => (int?)v.Id) ?? 0;
+            if (string.IsNullOrWhiteSpace(carrito.CodigoVenta))
+            {
+                carrito.CodigoVenta = $"VEN{usuarioId}{new Random().Next(1000, 9999)}000";
+            }
             nuevoId++;
             // Crear una nueva venta
             var venta = new Venta
             {
                 Id= nuevoId,
                 UsuarioId = usuarioId,
-                CodigoVenta = $"VEN{usuarioId}{new Random().Next(1000, 9999)}000", // Implementa tu lógica para generar un código único
+                CodigoVenta = carrito.CodigoVenta,
                 MontoTotal = carrito.MontoTotal,
                 DetalleVentas = new List<DetalleVenta>()
             };
