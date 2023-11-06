@@ -96,12 +96,14 @@
             detallesVenta.push({ MakiId: makiId, Cantidad: cantidad, Id:id });
         });
         var ventaData = {
+            CodigoVenta: "",
             MontoTotal: total,
             DetalleVentas: detallesVenta
         };
+        console.log(ventaData)
 
         $.ajax({
-            url: "/Makis/ConfirmarCompra",
+            url: "/Api/api/ventas/confirmarcompra",
             type: "POST",
             data: JSON.stringify(ventaData),
             contentType: "application/json; charset=utf-8",
