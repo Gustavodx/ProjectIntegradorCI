@@ -19,7 +19,83 @@ namespace ProyectoPI.Controllers
             _carrito = carrito;
         }
 
-        [HttpPost]
+
+        [HttpGet]
+        [Route("makis/GetMakis")]
+        public ActionResult<IEnumerable<Maki>> GetMakis()
+        {
+            var makis = _context.Makis.ToList();
+            return makis;
+        }
+
+        [HttpGet]
+        [Route("GetVentaCodigos/{usuarioId}")]
+        public ActionResult<IEnumerable<string>> GetVentaCodigos(int usuarioId)
+        {
+            // Filtrar las ventas por el usuarioId
+            var ventas = _context.Ventas.Where(v => v.UsuarioId == usuarioId).ToList();
+
+            // Obtener solo los códigos de venta
+            var codigosVenta = ventas.Select(v => v.CodigoVenta).ToList();
+
+            return codigosVenta;
+        }
+
+        [HttpGet("GetUltimaVentaPorId/{ventaId}")]
+        public ActionResult<Venta> GetUltimaVentaPorId(int ventaId)
+        {
+            var ultimaVenta = _context.Ventas
+                .OrderByDescending(v => v.Id)
+                .FirstOrDefault();
+
+            if (ultimaVenta == null)
+            {
+                return NotFound();
+            }
+
+            return ultimaVenta;
+        }
+
+        [HttpGet("GetUltimaVentaPorUsuario/{nombreUsuario}")]
+        public ActionResult<Venta> GetUltimaVentaPorUsuario(string nombreUsuario)
+        {
+            var usuario = _context.Usuarios.FirstOrDefault(u => u.Nombre == nombreUsuario);
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+            var ultimaVenta = _context.Ventas
+                .Where(v => v.UsuarioId == usuario.IdUsuario)
+                .OrderByDescending(v => v.Id)
+                .FirstOrDefault();
+
+            if (ultimaVenta == null)
+            {
+                return NotFound();
+            }
+
+            return ultimaVenta;
+        }
+
+
+        [HttpGet]
+        [Route("GetVentaCodigosPorUsuario/{nombreUsuario}")]
+        public ActionResult<IEnumerable<string>> GetVentaCodigosPorUsuario(string nombreUsuario)
+        {
+            var usuario = _context.Usuarios.FirstOrDefault(u => u.Nombre == nombreUsuario);
+
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+            var ventas = _context.Ventas.Where(v => v.UsuarioId == usuario.IdUsuario).ToList();
+            var codigosVenta = ventas.Select(v => v.CodigoVenta).ToList();
+
+            return codigosVenta;
+        }
+
+    [HttpPost]
         [Route("ventas/confirmarcompra")]
         public IActionResult ConfirmarCompra([FromBody] Venta carrito)
         {
