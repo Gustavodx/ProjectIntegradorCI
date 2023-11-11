@@ -1,0 +1,41 @@
+﻿/* Estilos personalizados */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("/images/fondo1.PNG"); /* Ajusta la ruta de la imagen según tu estructura de archivos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    background: #051401;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #d04f4e;
+    color: #fff;
+    text-align: center;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+}
+
+.btn-primary {
+    background-color: #f8d674;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #f8d674;
+    }
+
+a.btn {
+    text-decoration: none;
+    color: #007BFF;
+}
