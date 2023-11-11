@@ -141,5 +141,20 @@ namespace ProyectoPI.Controllers
 
             return Ok("Compra Satisfacotria");
         }
+
+        /*********/
+
+
+
+        [HttpPost]
+        [Route("makis/ListarTodosMakis")]
+        public ActionResult<IEnumerable<Maki>> ListarTodosMakis([FromBody] string dummy)
+        {
+            var makis = _context.Makis.ToList();
+            return makis;
+        }
+
+
+
     }
 }
