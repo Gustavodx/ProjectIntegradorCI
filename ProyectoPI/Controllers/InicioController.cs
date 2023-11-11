@@ -62,7 +62,7 @@ namespace ProyectoPI.Controllers
                 CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(claimsIdentity),
                 properties);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Main", "Vistas");
         }
 
         public async Task<IActionResult> CerrarSesion()
