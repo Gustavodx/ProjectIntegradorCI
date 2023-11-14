@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Downloads\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\ProyectoPI.csproj": {}
+    "D:\\DSW_01\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\ProyectoPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Downloads\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\ProyectoPI.csproj": {
+    "D:\\DSW_01\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\ProyectoPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Downloads\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\ProyectoPI.csproj",
+        "projectUniqueName": "D:\\DSW_01\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\ProyectoPI.csproj",
         "projectName": "ProyectoPI",
-        "projectPath": "C:\\Users\\User\\Downloads\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\ProyectoPI.csproj",
+        "projectPath": "D:\\DSW_01\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\ProyectoPI.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Downloads\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\obj\\",
+        "outputPath": "D:\\DSW_01\\ProyectoIntegrador\\ProjectIntegradorCI\\ProyectoPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
