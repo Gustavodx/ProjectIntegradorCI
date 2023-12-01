@@ -189,12 +189,20 @@
       "PackagePath": "staticwebassets\\css\\styleAboutUs.css"
     },
     {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleInicio.css",
+      "PackagePath": "staticwebassets\\css\\styleInicio.css"
+    },
+    {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleMain.css",
       "PackagePath": "staticwebassets\\css\\styleMain.css"
     },
     {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleQuestions.css",
       "PackagePath": "staticwebassets\\css\\styleQuestions.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleRegistro.css",
+      "PackagePath": "staticwebassets\\css\\styleRegistro.css"
     },
     {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\favicon.ico",
@@ -221,6 +229,46 @@
       "PackagePath": "staticwebassets\\images\\Imagen5.png"
     },
     {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI01.png",
+      "PackagePath": "staticwebassets\\images\\MAKI01.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI010.png",
+      "PackagePath": "staticwebassets\\images\\MAKI010.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI02.png",
+      "PackagePath": "staticwebassets\\images\\MAKI02.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI03.png",
+      "PackagePath": "staticwebassets\\images\\MAKI03.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI04.png",
+      "PackagePath": "staticwebassets\\images\\MAKI04.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI05.png",
+      "PackagePath": "staticwebassets\\images\\MAKI05.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI06.png",
+      "PackagePath": "staticwebassets\\images\\MAKI06.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI07.png",
+      "PackagePath": "staticwebassets\\images\\MAKI07.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI08.png",
+      "PackagePath": "staticwebassets\\images\\MAKI08.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI09.png",
+      "PackagePath": "staticwebassets\\images\\MAKI09.png"
+    },
+    {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\about1.jpg",
       "PackagePath": "staticwebassets\\images\\about1.jpg"
     },
@@ -239,6 +287,14 @@
     {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\about5.jpg",
       "PackagePath": "staticwebassets\\images\\about5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\carVacio.png",
+      "PackagePath": "staticwebassets\\images\\carVacio.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\delivery.png",
+      "PackagePath": "staticwebassets\\images\\delivery.png"
     },
     {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\fb.png",
@@ -265,12 +321,36 @@
       "PackagePath": "staticwebassets\\images\\fondo4.png"
     },
     {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\horario.jpg",
+      "PackagePath": "staticwebassets\\images\\horario.jpg"
+    },
+    {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\ig.png",
       "PackagePath": "staticwebassets\\images\\ig.png"
     },
     {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\logo.jpg",
       "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\metodosPago.jpg",
+      "PackagePath": "staticwebassets\\images\\metodosPago.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\pagos.jpg",
+      "PackagePath": "staticwebassets\\images\\pagos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\pedidos2.jpg",
+      "PackagePath": "staticwebassets\\images\\pedidos2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\pedidosLinea.jpg",
+      "PackagePath": "staticwebassets\\images\\pedidosLinea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\promociones.jpg",
+      "PackagePath": "staticwebassets\\images\\promociones.jpg"
     },
     {
       "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\sushi1.png",

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProyectoPI.Models;
 using static ProyectoPI.Models.Carrito;
@@ -14,14 +15,14 @@ namespace ProyectoPI.Controllers
             _carrito = carrito;
         }
         public IActionResult Index()
-        {   
+        {
             var items = _carrito.Items.ToList();
             return View(items);
         }
 
         [HttpPost]
         public IActionResult IncrementQuantity(int makiId)
-            {
+        {
             // Busca el producto en el carrito
             var carritoItem = _carrito.Items.FirstOrDefault(item => item.Maki.Id == makiId);
 

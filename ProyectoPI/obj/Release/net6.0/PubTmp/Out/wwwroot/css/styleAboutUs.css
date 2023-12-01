@@ -1,0 +1,186 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-image: url("/images/fondo3.PNG"); /* Ajusta la ruta de la imagen según tu estructura de archivos */
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.maki-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+    .maki-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.maki-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.maki-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.maki-price {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+    }
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-button {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-button-left {
+    left: 0;
+}
+
+.carousel-button-right {
+    right: 0;
+}
+
+/* Estilo para el título de promociones */
+.container.text-center h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las tarjetas de promoción */
+.promo-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+    .promo-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Estilo para el botón "Ver Producto" */
+    .promo-card button {
+        background-color: #b81313;
+        /*#007bff*/
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .promo-card button:hover {
+            background-color: #ea4646
+            /*background-color: #0056b3;*/
+        }
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+    /* Estilos para las columnas */
+    footer .container {
+        max-width: 1200px;
+    }
+
+    footer h5 {
+        color: #fff;
+    }
+
+    /* Estilos para los enlaces del footer */
+    footer ul.list-unstyled {
+        padding: 0;
+        list-style: none;
+    }
+
+        footer ul.list-unstyled li a {
+            color: #fff;
+            text-decoration: none;
+            transition: text-decoration 0.3s ease-in-out;
+        }
+
+            /* Estilo de subrayado al hacer hover */
+            footer ul.list-unstyled li a:hover {
+                text-decoration: underline;
+            }
+
+        /* Estilos para las imágenes de redes sociales */
+        footer ul.list-unstyled li img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+    footer .social-label {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 5px;
+        /* Centrar los elementos <li> en el pie de página */
+        footer ul.list-unstyled li
+
+{
+    text-align: center;
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+footer h5 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px; /* Espacio entre títulos y elementos <li> */
+}

@@ -1,4 +1,6 @@
-﻿namespace ProyectoPI.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace ProyectoPI.Models
 {
     public class Carrito
     {

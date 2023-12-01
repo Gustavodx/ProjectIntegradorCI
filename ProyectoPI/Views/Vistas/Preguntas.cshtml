@@ -7,9 +7,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="~/css/styleQuestions.css">
+    <link rel="stylesheet" href="~/css/styleQuestions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Tienda de Makis</title>
 
+    <style>
+        /* Estilo personalizado para el textarea */
+        .styled-textarea {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: vertical; /* Permite ajustar verticalmente, pero no horizontalmente */
+        }
+
+        /* Estilos para el botón de enviar */
+        .btn-enviar {
+            /* Puedes agregar más estilos para personalizar el botón */
+            margin-top: 10px;
+            font-size: 16px;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -99,7 +121,25 @@
                     <p>Si no estás satisfecho con tu pedido, por favor contáctanos de inmediato. Estamos comprometidos a resolver cualquier problema.</p>
                 </div>
             </div>
-       
+            
+            <div class="container">
+                <form id="preguntaForm">
+                    <div class="form-group">
+                        <h3 for="preguntaTextarea">¿Alguna duda Adicional?</h3>
+                        <textarea class="form-control styled-textarea" id="preguntaTextarea" rows="4" placeholder="Escribe tu pregunta aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-enviar" id="enviar">Enviar</button>
+                </form>
+                <div class="alert alert-success mt-3" role="alert" id="mensajeRespuesta" style="display: none;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+            
+
+
+
         
 
     <!-- Footer -->
@@ -176,6 +216,46 @@
                 <center>
                 <p>©2023 Miso Mori. Todos los Derechos Reservados</p>
             </center>
-</footer>
+            </div>
+            </div>
+    </footer>
+        <script>
+            $(document).ready(function () {
+                $("#preguntaForm").submit(function (event) {
+                event.preventDefault();
+                var mensaje = $("#preguntaTextarea").val();
+
+                var data = {
+                    Correo:"",
+                    Codigo:"",
+                    Estado:1,
+                    Mensaje: mensaje
+                };
+                $.ajax({
+                    url: "http://apiproyectopi-001-site1.anytempurl.com/api/Api/consultas/NewConsulta",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(data),
+                    success: function (response) {
+                        // Manejar la respuesta exitosa aquí
+                        console.log("Consulta creada:", response);
+                        $("#preguntaTextarea").val("");
+                        $("#mensajeRespuesta").text("Consulta creada con éxito. Código: " + response.codigo);
+                        $("#mensajeRespuesta").show();
+                        setTimeout(function () {
+                            $("#mensajeRespuesta").hide();
+                        }, 4000);
+                    },
+                    error: function (error) {
+                        // Manejar errores aquí
+                        console.error("Error al crear la consulta:", error);
+                        // Mostrar algún mensaje de error al usuario si lo deseas
+                        alert("Hubo un error al crear la consulta.");
+                    }
+                });
+            });
+            });
+        </script>
+
 </body>
 </html>

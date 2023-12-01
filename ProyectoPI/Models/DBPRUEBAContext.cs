@@ -20,6 +20,8 @@ namespace ProyectoPI.Models
         public DbSet<Maki> Makis { get; set; } = null!;
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<DetalleVenta> DetalleVentas { get; set; }
+        public DbSet<Consultas> Consultas { get; set; }
+        public DbSet<Mensajes> Mensajes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 

@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProyectoPI.Models;
+using System.Web.Helpers;
 using static ProyectoPI.Models.Carrito;
 
 namespace ProyectoPI.Controllers
@@ -12,11 +15,13 @@ namespace ProyectoPI.Controllers
     {
         private readonly DBPRUEBAContext _context;
         private readonly CarritoDeCompras _carrito;
+        private readonly IEmailSender _emailSender;
 
-        public ApiController(DBPRUEBAContext context, CarritoDeCompras carrito)
+        public ApiController(DBPRUEBAContext context, CarritoDeCompras carrito, IEmailSender emailSender)
         {
             _context = context;
             _carrito = carrito;
+            _emailSender = emailSender;
         }
 
 
@@ -42,7 +47,7 @@ namespace ProyectoPI.Controllers
         }
 
         [HttpGet("GetUltimaVentaPorId/{ventaId}")]
-        public ActionResult<Venta> GetUltimaVentaPorId(int ventaId)
+        public ActionResult<string> GetUltimaVentaPorId(int ventaId)
         {
             var ultimaVenta = _context.Ventas
                 .OrderByDescending(v => v.Id)
@@ -53,11 +58,11 @@ namespace ProyectoPI.Controllers
                 return NotFound();
             }
 
-            return ultimaVenta;
+            return ultimaVenta.CodigoVenta;
         }
 
         [HttpGet("GetUltimaVentaPorUsuario/{nombreUsuario}")]
-        public ActionResult<Venta> GetUltimaVentaPorUsuario(string nombreUsuario)
+        public ActionResult<string> GetUltimaVentaPorUsuario(string nombreUsuario)
         {
             var usuario = _context.Usuarios.FirstOrDefault(u => u.Nombre == nombreUsuario);
 
@@ -75,7 +80,7 @@ namespace ProyectoPI.Controllers
                 return NotFound();
             }
 
-            return ultimaVenta;
+            return ultimaVenta.CodigoVenta;
         }
 
 
@@ -95,7 +100,7 @@ namespace ProyectoPI.Controllers
             return codigosVenta;
         }
 
-    [HttpPost]
+        [HttpPost]
         [Route("ventas/confirmarcompra")]
         public IActionResult ConfirmarCompra([FromBody] Venta carrito)
         {
@@ -139,12 +144,10 @@ namespace ProyectoPI.Controllers
 
             _carrito.Items.Clear();
 
-            return Ok("Compra Satisfacotria");
+            return RedirectToAction("Index", "Makis");
         }
 
         /*********/
-
-
 
         [HttpPost]
         [Route("makis/ListarTodosMakis")]
@@ -155,6 +158,91 @@ namespace ProyectoPI.Controllers
         }
 
 
+        [HttpPost]
+        [Route("consultas/NewConsulta")]
+        public async Task<IActionResult> CrearConsulta([FromBody] Consultas consulta)
+        {
+            // Generar el código (CDA-000x)
+            if(consulta.Correo == null || consulta.Correo == "")
+            {
+                var corre = User.Identity.Name;
+                var correo = _context.Usuarios.First(u => u.Nombre == corre).Correo;
+                consulta.Correo = correo;
+            }
+            int ultimaConsultaId = _context.Consultas.Max(c => (int?)c.Id) ?? 0;
+            string codigo = $"CDA-{ultimaConsultaId + 1:0000}";
+            consulta.Estado = 1;
+            consulta.Codigo = codigo;
 
+            await _emailSender.SendEmailAsync(consulta.Correo, "Hola Tu codigo", $"Hola me pongo en contacto se te genero el {consulta.Codigo}");
+            _context.Consultas.Add(consulta);
+            _context.SaveChanges();
+
+            return Ok(new { Message = "Consulta creada con éxito", Codigo = codigo });
+        }
+
+
+        [HttpPost]
+        [Route("consulta/NewSolicitud")]
+        public async Task<IActionResult> CrearSolicitud([FromBody] CorreoModel correoModel)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(correoModel.Correo))
+                {
+                    return BadRequest("El correo no puede estar vacío");
+                }
+                string correo = correoModel.Correo;
+                int ultimaConsultaId = _context.Mensajes.ToList().Max(c => (int?)c.Id) ?? 0;
+                string codigo = $"CDAB-{ultimaConsultaId + 1:0000}";
+
+                Mensajes mensajes = new Mensajes
+                {
+                    Correo = correo,
+                    Codigo = codigo
+                };
+
+                await _emailSender.SendEmailAsync(correo, "Hola, tu código", $"Hola, me pongo en contacto. Se te generó el código: {mensajes.Codigo}");
+
+                _context.Mensajes.Add(mensajes);
+                _context.SaveChanges();
+
+                return Ok(new { Message = $"Consulta creada con éxito {mensajes.Codigo}" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Se produjo un error al guardar el correo: " + ex.Message);
+            }
+        }
+
+
+        [HttpPost]
+        [Route("consulta/NewSolicitudV2/{correo}")]
+        public async Task<IActionResult> CrearSolicitudCorreo(string correo)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(correo))
+                {
+                    return BadRequest("El correo no puede estar vacio");
+                }
+                int ultimaConsultaId = _context.Mensajes.Max(c => (int?)c.Id) ?? 0;
+                string codigo = $"CDAB2-{ultimaConsultaId + 1:0000}";
+                Mensajes mensajes = new Mensajes
+                {
+                    Correo = correo,
+                    Codigo = codigo
+                };
+                await _emailSender.SendEmailAsync(correo, "Hola Tu codigo", $"Hola me pongo en contacto se te genero el {mensajes.Codigo}");
+                _context.Mensajes.Add(mensajes);
+                _context.SaveChanges();
+                return Ok(new { Message = "Consulta creada con éxito", Codigo = codigo });
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, "Se produjo un error al guardar el correo: " + ex.Message);
+            }
+        }
     }
 }

@@ -1,16 +1,4 @@
-﻿
-
-
-
-
-
-
-
-
-
-
-
-
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProyectoPI.Models;
@@ -87,7 +75,7 @@ namespace ProyectoPI.Controllers
             // Crear una nueva venta
             var venta = new Venta
             {
-                Id= nuevoId,
+                Id = nuevoId,
                 UsuarioId = usuarioId,
                 CodigoVenta = carrito.CodigoVenta,
                 MontoTotal = carrito.MontoTotal,

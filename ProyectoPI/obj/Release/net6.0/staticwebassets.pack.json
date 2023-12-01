@@ -1,0 +1,637 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\.nuget\\packages\\bootstrap\\5.3.2\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\ProyectoPI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProyectoPI.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleAboutUs.css",
+      "PackagePath": "staticwebassets\\css\\styleAboutUs.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleInicio.css",
+      "PackagePath": "staticwebassets\\css\\styleInicio.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleMain.css",
+      "PackagePath": "staticwebassets\\css\\styleMain.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleQuestions.css",
+      "PackagePath": "staticwebassets\\css\\styleQuestions.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\css\\styleRegistro.css",
+      "PackagePath": "staticwebassets\\css\\styleRegistro.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\Imagen1.png",
+      "PackagePath": "staticwebassets\\images\\Imagen1.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\Imagen2.jpg",
+      "PackagePath": "staticwebassets\\images\\Imagen2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\Imagen3.png",
+      "PackagePath": "staticwebassets\\images\\Imagen3.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\Imagen4.jpg",
+      "PackagePath": "staticwebassets\\images\\Imagen4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\Imagen5.png",
+      "PackagePath": "staticwebassets\\images\\Imagen5.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI01.png",
+      "PackagePath": "staticwebassets\\images\\MAKI01.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI010.png",
+      "PackagePath": "staticwebassets\\images\\MAKI010.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI02.png",
+      "PackagePath": "staticwebassets\\images\\MAKI02.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI03.png",
+      "PackagePath": "staticwebassets\\images\\MAKI03.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI04.png",
+      "PackagePath": "staticwebassets\\images\\MAKI04.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI05.png",
+      "PackagePath": "staticwebassets\\images\\MAKI05.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI06.png",
+      "PackagePath": "staticwebassets\\images\\MAKI06.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI07.png",
+      "PackagePath": "staticwebassets\\images\\MAKI07.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI08.png",
+      "PackagePath": "staticwebassets\\images\\MAKI08.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\MAKI09.png",
+      "PackagePath": "staticwebassets\\images\\MAKI09.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\about1.jpg",
+      "PackagePath": "staticwebassets\\images\\about1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\about2.jpg",
+      "PackagePath": "staticwebassets\\images\\about2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\about3.jpg",
+      "PackagePath": "staticwebassets\\images\\about3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\about4.png",
+      "PackagePath": "staticwebassets\\images\\about4.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\about5.jpg",
+      "PackagePath": "staticwebassets\\images\\about5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\carVacio.png",
+      "PackagePath": "staticwebassets\\images\\carVacio.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\delivery.png",
+      "PackagePath": "staticwebassets\\images\\delivery.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\fb.png",
+      "PackagePath": "staticwebassets\\images\\fb.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\fondo.PNG",
+      "PackagePath": "staticwebassets\\images\\fondo.PNG"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\fondo1.PNG",
+      "PackagePath": "staticwebassets\\images\\fondo1.PNG"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\fondo2.PNG",
+      "PackagePath": "staticwebassets\\images\\fondo2.PNG"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\fondo3.png",
+      "PackagePath": "staticwebassets\\images\\fondo3.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\fondo4.png",
+      "PackagePath": "staticwebassets\\images\\fondo4.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\horario.jpg",
+      "PackagePath": "staticwebassets\\images\\horario.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\ig.png",
+      "PackagePath": "staticwebassets\\images\\ig.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\metodosPago.jpg",
+      "PackagePath": "staticwebassets\\images\\metodosPago.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\pagos.jpg",
+      "PackagePath": "staticwebassets\\images\\pagos.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\pedidos2.jpg",
+      "PackagePath": "staticwebassets\\images\\pedidos2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\pedidosLinea.jpg",
+      "PackagePath": "staticwebassets\\images\\pedidosLinea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\promociones.jpg",
+      "PackagePath": "staticwebassets\\images\\promociones.jpg"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\sushi1.png",
+      "PackagePath": "staticwebassets\\images\\sushi1.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\sushi2.png",
+      "PackagePath": "staticwebassets\\images\\sushi2.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\sushi3.png",
+      "PackagePath": "staticwebassets\\images\\sushi3.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\sushi4.png",
+      "PackagePath": "staticwebassets\\images\\sushi4.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\sushi5.png",
+      "PackagePath": "staticwebassets\\images\\sushi5.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\sushi6.png",
+      "PackagePath": "staticwebassets\\images\\sushi6.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\tiktok.PNG",
+      "PackagePath": "staticwebassets\\images\\tiktok.PNG"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\images\\tw.png",
+      "PackagePath": "staticwebassets\\images\\tw.png"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\setie\\Music\\6TO CICLO\\ProjectIntegradorCI\\ProyectoPI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.ProyectoPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.ProyectoPI.props",
+      "PackagePath": "build\\ProyectoPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ProyectoPI.props",
+      "PackagePath": "buildMultiTargeting\\ProyectoPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.ProyectoPI.props",
+      "PackagePath": "buildTransitive\\ProyectoPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

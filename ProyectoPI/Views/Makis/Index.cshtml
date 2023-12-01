@@ -5,11 +5,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-top: 1rem;
     }
 
     .maki-item {
         border: 1px solid #ddd;
         border-radius: 5px;
+        background-color:#fff;
         padding: 10px;
         margin: 10px;
         width: calc(33.33% - 20px);
@@ -19,11 +21,17 @@
 
     .buttons-container {
         margin-top: 10px;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
     }
 
     .detalle-button, .add-button {
         display: inline-block;
         padding: 5px 10px;
+        max-width: 150px;
+        min-width: 150px;
         margin: 0 5px;
         background-color: #007bff;
         color: #fff;
@@ -48,24 +56,48 @@
         transition: opacity 0.5s;
     }
 
-        .notification.hidden {
-            opacity: 0;
+    .notification.hidden {
+        opacity: 0;
+    }
+    
+    .content-title{
+        text-align: center;
+        background: #84b6f4;
+        padding: 0.5rem;
+        border-radius: 25px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .maki-image {
+        width: 100%; /* Ancho deseado */
+        height: auto; /* Para mantener la proporción */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        height: 200px; /* Alto deseado */
+        object-fit: fill; /* Ajustar y recortar la imagen para llenar el contenedor */
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out; /* Efecto de transición suave */
+    }
+
+        .maki-image:hover {
+            transform: scale(1.1); /* Escalar la imagen al pasar el mouse */
         }
 
 </style>
 
-<h2>Catálogo de Makis</h2>
+<div class="content-title">
+    <h2>Catalogo de Makis</h2>
+</div>
 
 <div class="catalog-container">
     @foreach (var maki in Model)
     {
         <div class="maki-item">
             <h3>@maki.Nombre</h3>
-            <img src="~/images/sushi+@maki.Id" alt="Imagen @maki.Nombre"/>
-            <p>Ingredientes: @maki.Ingredientes</p>
-            <p>Precio: @maki.Precio.ToString("C")</p>
+            <img class="maki-image" src="~/images/MAKI0@(maki.Id).png" alt="Imagen @maki.Nombre" />
+            <p class="mt-2"><b>Ingredientes:</b> @maki.Ingredientes</p>
+            <p>Precio: <b>@maki.Precio S/</b></p>
             <div class="buttons-container">
-                <a class="detalle-button" href="#">Detalle</a>
+                @* <a class="detalle-button" href="#">Detalle</a> *@
                 <form method="post" asp-action="AddToCart" asp-route-makiId="@maki.Id" class="add-to-cart-form">
                     <button type="submit" class="add-button">Agregar al carrito</button>
                 </form>
